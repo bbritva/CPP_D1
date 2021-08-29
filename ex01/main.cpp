@@ -6,12 +6,14 @@
 
 int main()
 {
-	Zombie *zomb;
+	int count = 6;
+	int i;
+	Zombie *horde;
 	Zombie zombie("Butthead");
-	Zombie z;
 	
-	zomb = newZombie("Beavis");
-	zomb->announce();
-	delete zomb;
-	randomChump("Randy");
+	horde = zombieHorde(count, "Shon");
+	i = -1;
+	while(++i < count)
+		horde[i].announce();
+	delete[] horde;
 }

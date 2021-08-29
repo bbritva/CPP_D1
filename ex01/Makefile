@@ -2,7 +2,7 @@ NAME		=	z_controller
 CPP			=	clang++ $(CFLAGS)
 RM			=	rm -f
 CFLAGS		=	-Wall -Wextra -Werror -std=c++98
-SRCS		=	main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
+SRCS		=	main.cpp Zombie.cpp ZombieHorde.cpp
 OBJS		=	$(SRCS:.cpp=.o)
 HDR			=	includes/philo_main.h
 CYAN		=	\x1B[36m
