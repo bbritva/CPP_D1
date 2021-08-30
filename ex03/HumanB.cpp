@@ -13,9 +13,9 @@ void HumanB::setName(std::string name)
 	this->_name = name;
 }
 
-void HumanB::setWeapon(Weapon *weapon)
+void HumanB::setWeapon(Weapon &weapon)
 {
-	this->_weapon = weapon;
+	this->_weapon = &weapon;
 }
 
 std::string HumanB::getName()
