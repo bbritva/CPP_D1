@@ -1,8 +1,7 @@
 #include "HumanA.hpp"
 
-HumanA::HumanA(Weapon &weapon)
+HumanA::HumanA(std::string name, Weapon &weapon):_name(name), _weapon(weapon)
 {
-    this->_weapon = weapon;
 }
 
 HumanA::~HumanA()

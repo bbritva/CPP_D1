@@ -10,17 +10,17 @@ int main()
 {
 	Weapon weaponMale;
 	Weapon weaponFemale;
-	weaponMale.setType("Slignshot");
-	weaponFemale.setType("Pan");
+	weaponMale.setType("slignshot");
+	weaponFemale.setType("pan");
 
-	HumanA guy(weaponMale);
-	HumanB chick;
-	guy.setName("Buddy");
-	chick.setName("Josie");
-	chick.setWeapon(weaponFemale);
+	HumanA guy("Buddy", weaponMale);
+	HumanB chick("Josie");
+	chick.setWeapon(&weaponFemale);
 	guy.attack();
 	chick.attack();
 	weaponFemale.setType("rolling pin");
+	weaponMale.setType("boleadoras");
 	chick.attack();
+	guy.attack();
 
 }
