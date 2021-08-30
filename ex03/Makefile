@@ -2,7 +2,7 @@ NAME		=	h_controller
 CPP			=	clang++ $(CFLAGS)
 RM			=	rm -f
 CFLAGS		=	-Wall -Wextra -Werror -std=c++98
-SRCS		=	main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
+SRCS		=	main.cpp Weapon.cpp HumanA.cpp HumanB.cpp 
 OBJS		=	$(SRCS:.cpp=.o)
 HDR			=	includes/philo_main.h
 CYAN		=	\x1B[36m

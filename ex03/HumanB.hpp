@@ -1,17 +1,17 @@
-#ifndef CPP_D1_HUMANA_HPP
-#define CPP_D1_HUMANA_HPP
+#ifndef CPP_D1_HUMANB_HPP
+#define CPP_D1_HUMANB_HPP
 
 #include "Weapon.hpp"
 
-class HumanA {
+class HumanB {
 private:
     std::string _name;
     Weapon      _weapon;
 public:
-    HumanA(Weapon &weapon);
-    ~HumanA();
+    HumanB();
+    ~HumanB();
     void setName(std::string name);
-    void setWeapon(Weapon weapon);
+    void setWeapon(Weapon &weapon);
     std::string getName();
     Weapon getWeapon();
     void attack();
