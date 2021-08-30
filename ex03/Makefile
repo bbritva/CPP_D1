@@ -1,4 +1,4 @@
-NAME		=	z_controller
+NAME		=	h_controller
 CPP			=	clang++ $(CFLAGS)
 RM			=	rm -f
 CFLAGS		=	-Wall -Wextra -Werror -std=c++98
