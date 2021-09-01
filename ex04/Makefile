@@ -1,4 +1,4 @@
-NAME		=	sed_loser
+NAME		=	replace
 CPP			=	clang++ $(CFLAGS)
 RM			=	rm -f
 CFLAGS		=	-Wall -Wextra -Werror -std=c++98

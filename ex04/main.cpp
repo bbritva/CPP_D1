@@ -17,10 +17,11 @@ void	make_replace(std::string &str, std::string &s1, std::string &s2)
 
 	while (i < str.length())
 	{
-		i = str.find(s1);
+		i = str.find(s1, i);
 		if (i == std::string::npos)
 			break;
 		str = str.substr(0, i) + s2 + str.substr(i + s1.length());
+		i += s2.length();
 	}
 }
 
@@ -43,9 +44,15 @@ int main(int argc, char *argv[])
 			str += '\n';
 		}
 	}
-	std::cout << str << std::endl;
 	std::string s1(argv[2]);
 	std::string s2(argv[3]);
 	make_replace(str, s1, s2);
-	std::cout << str << std::endl;
+	std::string	fout_name(argv[1]);
+	fout_name += ".replace";
+	fout.open(fout_name);
+	if (!fout.is_open())
+		return(0);
+	fout << str;
+	fin.close();
+	fout.close();
 }
