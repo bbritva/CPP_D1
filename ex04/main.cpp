@@ -44,6 +44,7 @@ int main(int argc, char *argv[])
 			str += '\n';
 		}
 	}
+	fin.close();
 	std::string s1(argv[2]);
 	std::string s2(argv[3]);
 	make_replace(str, s1, s2);
@@ -53,6 +54,5 @@ int main(int argc, char *argv[])
 	if (!fout.is_open())
 		return(0);
 	fout << str;
-	fin.close();
 	fout.close();
 }

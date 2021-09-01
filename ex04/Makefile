@@ -1,7 +1,7 @@
 NAME		=	replace
 CPP			=	clang++ $(CFLAGS)
 RM			=	rm -f
-CFLAGS		=	-Wall -Wextra -Werror -std=c++98
+CFLAGS		=	-Wall -Wextra -Werror -std=c++98 -g3
 SRCS		=	main.cpp
 OBJS		=	$(SRCS:.cpp=.o)
 HDR			=	includes/philo_main.h
