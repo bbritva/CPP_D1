@@ -34,4 +34,4 @@
 #IDE files
 *vscode*
 *idea*
-
+*.dSYM*
