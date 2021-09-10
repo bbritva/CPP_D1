@@ -9,7 +9,7 @@ int main()
 	Zombie *zomb;
 	Zombie zombie("Butthead");
 	Zombie z;
-	
+
 	zomb = newZombie("Beavis");
 	zomb->announce();
 	delete zomb;
