@@ -50,7 +50,6 @@ Karen::Karen()
 
 Karen::~Karen()
 {
-	std::cout << "me died :'(" << std::endl;
 }
 
 
